@@ -2,4 +2,12 @@
 
 @theme {
   --color-primary: #5f6fff;
+
+  /* custom grid template */
+  --grid-cols-auto: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
 }
