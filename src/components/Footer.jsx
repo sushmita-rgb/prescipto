@@ -20,8 +20,8 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">Company</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>Home</li>
-            <li>About us</li>
+            <a href="./">Home</a>
+            <a href="./about">About</a>
             <li>contact</li>
             <li>Privacy policy</li>
           </ul>
