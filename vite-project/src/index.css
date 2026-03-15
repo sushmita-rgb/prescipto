@@ -3,3 +3,7 @@
 :root {
   --primary-color: #5f6fff;
 }
+
+@theme {
+  --color-primary: #5f6fff;
+}
