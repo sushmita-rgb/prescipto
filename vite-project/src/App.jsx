@@ -15,7 +15,7 @@ const App = () => {
   const { aToken } = useContext(AdminContext);
 
   return aToken ? (
-    <div className="bg-amber-200 min-h-screen">
+    <div className="min-h-screen bg-white">
       <ToastContainer />
       <Navbar />
 

@@ -7,3 +7,9 @@
 @theme {
   --color-primary: #5f6fff;
 }
+.input {
+  @apply border rounded px-3 py-2 outline-none;
+}
+::-webkit-scrollbar {
+  @apply hidden;
+}
