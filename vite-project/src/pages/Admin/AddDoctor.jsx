@@ -114,75 +114,97 @@ const AddDoctor = () => {
 
         {/* Form Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
-          <input
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            type="text"
-            placeholder="Enter name"
-            required
-            className="px-3 py-2 border rounded-md"
-          />
-
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            type="email"
-            placeholder="Enter email"
-            required
-            className="px-3 py-2 border rounded-md"
-          />
-
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            type="password"
-            placeholder="Enter password"
-            required
-            className="px-3 py-2 border rounded-md"
-          />
-
-          <select
-            onChange={(e) => setExperience(e.target.value)}
-            value={experience}
-            className="px-3 py-2 border rounded-md"
-          >
-            <option>1 Year</option>
-            <option>2 Year</option>
-            <option>3 Year</option>
-            <option>4 Year</option>
-          </select>
-
-          <input
-            onChange={(e) => setFees(e.target.value)}
-            value={fees}
-            type="number"
-            placeholder="Enter fees"
-            required
-            className="px-3 py-2 border rounded-md"
-          />
-
-          <select
-            onChange={(e) => setSpeciality(e.target.value)}
-            value={speciality}
-            className="px-3 py-2 border rounded-md"
-          >
-            <option>General physician</option>
-            <option>Gynecologist</option>
-            <option>Dermatologist</option>
-            <option>Pediatricians</option>
-            <option>Neurologist</option>
-          </select>
-
-          <input
-            onChange={(e) => setDegree(e.target.value)}
-            value={degree}
-            type="text"
-            placeholder="Education"
-            required
-            className="px-3 py-2 border rounded-md"
-          />
+          <div>
+            <p className="mb-1 text-sm">Full Name</p>
+            <input
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              type="text"
+              placeholder="Enter name"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
 
           <div>
+            <p className="mb-1 text-sm">Email</p>
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              type="email"
+              placeholder="Enter email"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Password</p>
+            <input
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              type="password"
+              placeholder="Enter password"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Experience</p>
+            <select
+              onChange={(e) => setExperience(e.target.value)}
+              value={experience}
+              className="w-full px-3 py-2 border rounded-md"
+            >
+              <option>1 Year</option>
+              <option>2 Year</option>
+              <option>3 Year</option>
+              <option>4 Year</option>
+            </select>
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Fees</p>
+            <input
+              onChange={(e) => setFees(e.target.value)}
+              value={fees}
+              type="number"
+              placeholder="Enter fees"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Speciality</p>
+            <select
+              onChange={(e) => setSpeciality(e.target.value)}
+              value={speciality}
+              className="w-full px-3 py-2 border rounded-md"
+            >
+              <option>General physician</option>
+              <option>Gynecologist</option>
+              <option>Dermatologist</option>
+              <option>Pediatricians</option>
+              <option>Neurologist</option>
+            </select>
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Education</p>
+            <input
+              onChange={(e) => setDegree(e.target.value)}
+              value={degree}
+              type="text"
+              placeholder="Education"
+              required
+              className="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div>
+            <p className="mb-1 text-sm">Address</p>
             <input
               onChange={(e) => setAddress1(e.target.value)}
               value={address1}
@@ -201,7 +223,6 @@ const AddDoctor = () => {
             />
           </div>
         </div>
-
         {/* About */}
         <textarea
           onChange={(e) => setAbout(e.target.value)}
